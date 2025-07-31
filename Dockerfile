@@ -1,7 +1,8 @@
 # Base image
-FROM alpine
+FROM node:14-alpine
 
 # Dependencies
+COPY ./ ./
 RUN npm install
 
 #Default command
